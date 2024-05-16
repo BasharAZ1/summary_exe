@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Flask app</h1>
+
+  
+    </header>
+    
+</head>
+<body>
+    <div class="page-layout">
+        <div class="form-side">
+            <div class="container">
+                <h2>Sign In</h2>
+
+
+                <form method="POST" action="/" class="home-page-form">
+                    <div class="input-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required ">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <input type="submit" value="submit">
+                      </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
