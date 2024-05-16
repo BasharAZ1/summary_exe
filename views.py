@@ -23,7 +23,7 @@ def homepage():
 
 def welcome(username):
 
-    bucket_name = os.getenv('S3_BUCKET')
+    bucket_name = 'labkaliedoo19980'
     object_name = f'Israel-1200-BarLev.png '  
     image_url = f'https://{bucket_name}.s3.us-west-2.amazonaws.com/{object_name}'
     return render_template('welcome.html', username=username, image_url=image_url)
