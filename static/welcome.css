@@ -1,18 +1,16 @@
-/* style.css */
 
-/* General styling for body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-/* Styling for the welcome message container */
+
 .welcome-container {
     background-color: white;
     padding: 20px;
@@ -20,17 +18,23 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 80%;
-    max-width: 600px;
+    max-width: 300px; /* Adjusted max-width for a smaller container */
+    justify-content: center;
 }
 
 /* Styling for the welcome message */
 .welcome-container h1 {
     color: #333;
-    font-size: 2em;
-    margin: 0;
+    font-size: 1.5em; /* Adjusted font-size for a smaller heading */
+    margin: 0 0 10px; /* Added margin-bottom for spacing */
+    justify-content: center;
 }
 
-/* Add some spacing around the page */
-h1 {
-    margin: 20px 0;
+.welcome-image {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: 50%;
+    margin-top: 10px; /* Reduced margin-top */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
 }

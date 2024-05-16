@@ -2,9 +2,12 @@
 <html>
 <head>
     <title>Welcome</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Welcome.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='welcome.css') }}">
 </head>
 <body>
-    <h1>Hello, {{ username }}!</h1>
+    <div class="welcome-container">
+        <h1>Hello, {{ username }}!</h1>
+        <img src="{{ image_url }}" alt="Welcome Image" class="welcome-image">
+    </div>
 </body>
 </html>

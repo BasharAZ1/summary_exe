@@ -1,6 +1,10 @@
 from flask import render_template, request, redirect, flash, url_for
 from models import User, db
 from sqlalchemy.exc import IntegrityError
+import os
+import boto3
+
+
 
 def homepage():
     if request.method == 'POST':
@@ -18,4 +22,10 @@ def homepage():
     return render_template('index.html')
 
 def welcome(username):
-    return render_template('welcome.html', username=username)
+
+    bucket_name = os.getenv('S3_BUCKET')
+    object_name = f'Israel-1200-BarLev.png '  
+    image_url = f'https://{bucket_name}.s3.us-west-2.amazonaws.com/{object_name}'
+    return render_template('welcome.html', username=username, image_url=image_url)
+
+
