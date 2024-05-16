@@ -11,8 +11,8 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'default_fallback_secret
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://admin:admin@localhost/mydatabase')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 load_dotenv()
-# db.init_app(app)
-# migrate = Migrate(app, db)
+db.init_app(app)
+migrate = Migrate(app, db)
 
 configure_routes(app)
 
