@@ -51,6 +51,5 @@ def welcome(username):
         },
         ExpiresIn=3600 
     )
-    print(image_url)
 
     return render_template('welcome.html', username=username, image_url=image_url)
