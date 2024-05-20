@@ -20,4 +20,4 @@ RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 # Command to run the application
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5001"]
+CMD ["flask", "run", "--host=0.0.0.0"]

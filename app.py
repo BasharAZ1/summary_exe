@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'default_fallback_secret_key')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://admin:admin@localhost/mydatabase')
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///site.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 load_dotenv()
 db.init_app(app)
@@ -18,3 +18,5 @@ configure_routes(app)
 
 if __name__ == "__main__":
     app.run(port=5001)
+
+
