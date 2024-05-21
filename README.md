@@ -132,5 +132,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
-## Documentation:
-https://docs.google.com/document/d/1ZBt_B0_Fetpr06OfBV6Lq49a9PwLcULIEvWYePjnPMM/edit
