@@ -6,6 +6,7 @@ import os
 
 
 def homepage():
+    
     if request.method == 'POST':
         username = request.form['username']
         email = request.form['email']
@@ -25,16 +26,9 @@ def homepage():
 
 
 def welcome(username):
-    S3_BUCKET='labkaliedoo19980'
-    OBJECT_Name='Israel-1200-BarLev.png'
+    S3_BUCKET=os.getenv('S3_BUCKET')
+    OBJECT_Name=os.getenv('OBJECT_Name')
+    print(S3_BUCKET)
     s3 = boto3.client('s3')
     url = s3.generate_presigned_url('get_object', Params={'Bucket': S3_BUCKET, 'Key': OBJECT_Name})
     return render_template('welcome.html', username=username, image_url=url)
-    # s3 = boto3.client('s3')
-
-    # try:
-    #     image_url = s3.generate_presigned_url('get_object', Params={'Bucket': os.getenv("S3_BUCKET"), 'Key': os.getenv("OBJECT_Name")}, ExpiresIn=3600)
-    # except Exception as e:
-    #     return f"Error generating presigned URL: {str(e)}", 500
-
-    # return render_template('welcome.html', username=username, image_url=image_url)
