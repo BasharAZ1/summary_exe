@@ -1,7 +1,7 @@
 
 # Flask Application with AWS Deployment
 
-This Flask application allows users to enter their name and email, and it greets them with a personalized message and a picture stored in an S3 bucket. The application is deployed on AWS EC2 with a load balancer and an auto-scaling group.
+This Flask application allows users to enter their name and email and store them locall db(sqlite), and it greets them with a personalized message and a picture stored in an S3 bucket. The application is deployed on AWS EC2 with a load balancer and an auto-scaling group.
 
 ## Features
 
