@@ -71,11 +71,11 @@ Ensure you have a bucket in AWS S3 (private) with the picture you want to displa
     nano .env
     ```
     - enter:
-        S3_BUCKET= your bucket name
-        OBJECT_Name = your_image_name
-        S3_KEY_ID=your S3 key
-        S3_ACCESS_KEY=your s3 access
-        FLASK_APP=app.py
+        - S3_BUCKET= your bucket name
+        - OBJECT_Name = your_image_name
+        - S3_KEY_ID=your S3 key
+        - S3_ACCESS_KEY=your s3 access
+        - FLASK_APP=app.py
 
 
 
