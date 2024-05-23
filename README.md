@@ -146,10 +146,12 @@ EC2 instances with auto balancer and auto scaling in the us-west-2 region. This 
 
 
 
-<img width="1320" alt="צילום מסך 2024-05-20 ב-15 58 01" src="https://github.com/BasharAZ1/summary_exe_devops/assets/81175356/ce14c3af-beca-40a3-8458-ccfbcd944624">
-![image](https://github.com/BasharAZ1/summary_exe_devops/assets/81175356/e4f54fae-3ff3-4f84-93b4-12f574f46fcc)
+![image](https://github.com/BasharAZ1/summary_exe_devops/assets/81175356/3bbe55a4-ef82-417e-ba83-1e507d1c8427)
 
+login 
 
+![image](https://github.com/BasharAZ1/summary_exe_devops/assets/81175356/44ac2831-90c3-4dae-a7b6-2242ebd95171)
+homepage
 
 app
 
