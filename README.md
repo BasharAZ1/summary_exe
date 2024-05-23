@@ -132,7 +132,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
-## screen shots
+## Screenshot
 
 
 
@@ -153,7 +153,6 @@ login
 ![image](https://github.com/BasharAZ1/summary_exe_devops/assets/81175356/44ac2831-90c3-4dae-a7b6-2242ebd95171)
 homepage
 
-app
 
 
 
